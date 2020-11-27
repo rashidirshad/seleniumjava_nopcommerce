@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="nopcommerce_app" parallel="tests" thread-count="3">
+	<test name="chrometest">
+	<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.nopcommerce_app.testCases.TC_LoginTest_001"/>
+		</classes>
+	
+	</test>
+	<test name="edgetest">
+		<parameter name="browser" value="edge"/>
+			<classes>
+				<class name="com.nopcommerce_app.testCases.TC_LoginTest_001"/>
+			</classes>
+		
+		</test>
+	<test name="firefoxtest">
+	<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.nopcommerce_app.testCases.TC_LoginTest_001"/>
+		</classes>
+	
+	</test>
+	
+</suite>
