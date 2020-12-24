@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>chrometest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 25 23:00:23 PKT 2020</td>
+<td>Started on:</td><td>Wed Dec 23 21:41:45 PKT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>52 seconds (52291 ms)</td>
+<tr><td>Total time:</td><td>78 seconds (78214 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,56 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce_app.testCases.TC_LoginDDT_002.loginTest()'><b>loginTest</b><br>Test class: com.nopcommerce_app.testCases.TC_LoginDDT_002<br>Parameters: adm@yourstore.com, ad, Pass</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.nopcommerce_app.testCases.TC_LoginDDT_002.loginTest(TC_LoginDDT_002.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2070784266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2070784266'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.nopcommerce_app.testCases.TC_LoginDDT_002.loginTest(TC_LoginDDT_002.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>11</td>
+<td>com.nopcommerce_app.testCases.TC_LoginDDT_002@12bcd0c0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +125,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nopcommerce_app.testCases.TC_LoginTest_001.loginTest()'><b>loginTest</b><br>Test class: com.nopcommerce_app.testCases.TC_LoginTest_001</td>
+<td title='com.nopcommerce_app.testCases.TC_LoginDDT_002.loginTest()'><b>loginTest</b><br>Test class: com.nopcommerce_app.testCases.TC_LoginDDT_002<br>Parameters: admin@yourstore.com, admin, Pass</td>
 <td></td>
-<td>41</td>
-<td>com.nopcommerce_app.testCases.TC_LoginTest_001@ea9b7c6</td></tr>
+<td>32</td>
+<td>com.nopcommerce_app.testCases.TC_LoginDDT_002@12bcd0c0</td></tr>
+<tr>
+<td title='com.nopcommerce_app.testCases.TC_LoginDDT_002.loginTest()'><b>loginTest</b><br>Test class: com.nopcommerce_app.testCases.TC_LoginDDT_002<br>Parameters: admin@yourstore.com, adm, Fail</td>
+<td></td>
+<td>12</td>
+<td>com.nopcommerce_app.testCases.TC_LoginDDT_002@12bcd0c0</td></tr>
+<tr>
+<td title='com.nopcommerce_app.testCases.TC_LoginDDT_002.loginTest()'><b>loginTest</b><br>Test class: com.nopcommerce_app.testCases.TC_LoginDDT_002<br>Parameters: admin@yourstore.com, admi, Fail</td>
+<td></td>
+<td>11</td>
+<td>com.nopcommerce_app.testCases.TC_LoginDDT_002@12bcd0c0</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,5 +1,7 @@
 package com.nopcommerce_app.testCases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +21,7 @@ public class TC_LoginTest_001 extends BaseClass{
 	
 	/////////////////////////////////////
 	@Test
-	public void loginTest() throws InterruptedException
+	public void loginTest() throws InterruptedException, IOException
 	{
 		
 		//driver.get("admin-demo.nopcommerce.com");
@@ -48,6 +50,7 @@ public class TC_LoginTest_001 extends BaseClass{
 		else
 		{
 			logger.error("Setting Failed");//error
+			captureScreen(driver,"loginTest");
 			Assert.assertTrue(false);
 		}
 		logger.info("Finished Test");
